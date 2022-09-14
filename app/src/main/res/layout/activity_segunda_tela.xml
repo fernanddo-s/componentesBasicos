@@ -42,7 +42,7 @@
                 android:text="Tocar Musica" />
 
             <Button
-                android:id="@+id/buttonSpotMusic"
+                android:id="@+id/buttonStopMusic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -60,6 +60,19 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Ir para a tela de Tabs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTelaGridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ir para a tela de Grid View" />
         </LinearLayout>
 
         <LinearLayout

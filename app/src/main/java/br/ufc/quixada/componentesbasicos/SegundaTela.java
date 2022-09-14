@@ -76,7 +76,7 @@ public class SegundaTela extends AppCompatActivity {
         });
 
         //Parar de tocar musica
-        buttonStopMusic = (Button) findViewById(R.id.buttonSpotMusic);
+        buttonStopMusic = (Button) findViewById(R.id.buttonStopMusic);
         buttonStopMusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,6 +92,16 @@ public class SegundaTela extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentTelaTabs = new Intent(getApplicationContext(), ActivityTabs.class);
                 startActivity(intentTelaTabs);
+            }
+        });
+
+        //Navegação para a tela de Grid View
+        Button buttonTelaGridView = (Button) findViewById(R.id.btnTelaGridView);
+        buttonTelaGridView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentTelaGridView = new Intent(getApplicationContext(), GridViewActivity.class);
+                startActivity(intentTelaGridView);
             }
         });
     }
